@@ -33,11 +33,6 @@ bluetooth.profile.sap.server.enabled?=true
 bluetooth.profile.ccp.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
 
-# Low memory killer daemon
-ro.lmk.log_stats=true
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=15
-ro.lmk.use_minfree_levels=true
 
 # Display
 debug.sf.disable_backpressure=1
@@ -46,3 +41,15 @@ debug.sf.disable_backpressure=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.qti.telephony.vt_cam_interface=2
+
+# LMKD
+ro.lmk.log_stats=true
+ro.lmk.use_minfree_levels=true
+ro.lmk.low=1001
+ro.lmk.medium=0
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
