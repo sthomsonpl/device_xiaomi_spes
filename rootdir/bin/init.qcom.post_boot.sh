@@ -72,7 +72,7 @@ function configure_memory_parameters() {
 
 low_ram=`getprop ro.config.low_ram`
 
-configure_read_ahead_kb_values
+      configure_read_ahead_kb_values
 
 # Set parameters for 32-bit Go targets.
 if [ "$low_ram" == "true" ]; then
