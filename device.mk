@@ -19,6 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/spes/spes-vendor.mk)
 
+#Include GCAM BSG
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/GcamBSG/GcamBSG-vendor.mk)
+endif
+#Use Lawnchair launcher
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
+
+
 # Enable Dynamic partition
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
