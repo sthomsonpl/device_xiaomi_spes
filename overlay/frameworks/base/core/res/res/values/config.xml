@@ -703,4 +703,7 @@
 
     <!-- Enable video pause workaround when enabling/disabling the camera. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+<bool name="config_enableSmartPixels">true</bool>
 </resources>
