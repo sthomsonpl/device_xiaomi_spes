@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_spes.mk
+    $(LOCAL_DIR)/weedos_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_spes-user \
-    arrow_spes-userdebug \
-    arrow_spes-eng
+    weedos_spes-user \
+    weedos_spes-userdebug \
+    weedos_spes-eng
