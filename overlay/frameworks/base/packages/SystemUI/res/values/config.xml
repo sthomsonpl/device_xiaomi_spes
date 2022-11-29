@@ -27,10 +27,7 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
-    <!-- The number of rows in the QuickSettings -->
-    <integer name="quick_settings_max_rows">5</integer>
-
-    <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
+ <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
     <!-- Preferred refresh rate at keyguard, if supported by the display -->
